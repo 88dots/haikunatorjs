@@ -1,8 +1,11 @@
 {
   "name": "haikunator",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Generate Heroku-like random names to use in your node applications.",
   "main": "lib/haikunator.js",
+	"bin": {
+    "haikunator": "cli.js"
+  },
   "scripts": {
     "compile": "babel -d lib/ src/",
     "prepublish": "npm run compile",
@@ -37,6 +40,7 @@
     "mocha": "^2.3.4"
   },
   "dependencies": {
+    "meow": "^3.7.0",
     "random-seed": "^0.3.0"
   }
 }
